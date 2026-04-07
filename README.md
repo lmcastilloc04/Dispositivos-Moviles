@@ -1,17 +1,42 @@
-# flutter_application_1
+# Fake Store App - Flutter
 
-A new Flutter project.
+Aplicación móvil/web desarrollada en Flutter para consumir la Fake Store API.  
+Este proyecto fue realizado como parcial de la asignatura **Programación para dispositivos móviles**.
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+La aplicación permite:
 
-A few resources to get you started if this is your first Flutter project:
+- Consultar productos desde la API (`GET /products`)
+- Ver el detalle de cada producto
+- Crear productos mediante formulario (`POST /products`)
+- Manejar estados de carga y errores
+- Mostrar una interfaz sencilla y funcional
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Tecnologías utilizadas
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter
+- Dart
+- HTTP package
+- Fake Store API
+
+## API utilizada
+
+- Base URL: `https://fakestoreapi.com`
+- Documentación: `https://fakestoreapi.com/docs`
+
+## Estructura del proyecto
+
+```text
+lib/
+ ├── main.dart
+ ├── models/
+ │    └── product.dart
+ ├── services/
+ │    └── api_service.dart
+ ├── screens/
+ │    ├── home_screen.dart
+ │    ├── product_detail_screen.dart
+ │    └── create_product_screen.dart
+ └── widgets/
+      └── product_card.dart
